@@ -1,3 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App, .MiApi{
+    width: auto;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +15,251 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.MiApi{
+  background-color: rgb(0, 0, 0,0);
+}
+
+.app-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app-background-img{
+  width: auto;
+  
+  height: 95vh;
+  position: absolute;
+  opacity: 0.3;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.container-main{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+ 
+ 
+}
+/******
+Header
+******/
+.container-header-main{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  border-radius: 0px 0px 16px 16px;
+}
+.container-header-img{
+  height: 50px;
+  width: auto;
+  margin: 2px;
+}
+.header-img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+
+}
+.container-header-title{
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+/*******************
+container-secondary
+*******************/
+.container-secondary{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+/********************
+container-secondary1
+********************/
+.container-secondary1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+}
+
+/********************
+    Formulario
+********************/
+
+.seader-input{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.slide{
+  display: flex;
+  justify-content: center;
+}
+.carusel-img{
+  margin: 0;
+  width: auto;
+  height: 60vh;
+  align-content: center;
+  justify-content: center;
+
+}
+.slider-control-centerleft, .slider-control-centerright, .slider-control-bottomcenter{
+  opacity: 0;
+}
+
+
+.container-secondary2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+  overflow: hidden;
+
+}
+
+.carusel2, .slider-container, .slider-frame{
+  height: 100%;
+}
+
+
+/******
+Person
+******/
+.container-person{
+
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background-color: #2f35426c;
+  border-radius: 16px;
+}
+
+.container-person-img{
+  display: flex;
+  justify-content: center;
+}
+
+.person-img{
+  height: 45vh;
+}
+.container-person-data{
+  width: auto;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description-primary h5{
+  font-size: 32px;
+}
+.description-primary p{
+  font-size: 16px;
+}
+.description{
+  display: flex;
+  align-items: flex-end;
+  border-bottom: solid 1px rgb(251, 207, 32);
+  margin: 10px;
+}
+h5, p{
+  margin: 0;
+}
+h5{
+  color: #f7c25e;
+}
+p{
+  margin-left: 5px;
+  color: #e7a223;
+}
+
+/***********
+Slider CArd
+***********/
+
+
+.slider{
+  display: flex;
+  cursor: grab;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.slider-card{
+  margin:  0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  
+}
+
+.card-size{
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(251, 207, 32,0);
+  border: 0;
+
+}
+
+.card-size:hover,
+.card-size:focus,
+.card-size:active{
+  background-color: #2f35426c;
+  border-radius: 16px;
+  box-shadow: 5px 8px #6c6b6b;
+}
+.cardImg{
+
+  margin-top: 10px;
+
+  width: auto;
+  height: 25vh;
+  transform: translate3d(0px,50px,0px);
+
+  pointer-events: none;
+}
+.baseImg{
+  padding: 0;
+  
+  width: 80%;
+  height: 10px;
+  border-radius: 50%;
+  border: solid 20px rgb(166, 164, 164);
+  transform: translate3d(0px,30px,0px) rotateX(80deg);
+
+}
+
+.cardTitle{
+  font-size: 80%;
+}
+
+
+.container-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2f35426c;
+}
+a{
+  color: black;
+  background-color: rgb(0,0,0,0);
+  margin: 5px;
 }
