@@ -1,3 +1,5 @@
+El video fue publicando en Youtube en la siguiente Url: https://youtu.be/NcWrCJ9R1BQ
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
