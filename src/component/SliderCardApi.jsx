@@ -35,7 +35,7 @@ const SliderCardApi = ({infoFilter, change, setPerson}) => {
   return (
     <>
       {/* Se raliza el mapeo de las imagenes extraidas de los datos */}
-      <Carousel wrapAround={true} slidesToShow={5} autoplay={true} autoplayInterval={4500} >
+      <Carousel wrapAround={true} slidesToShow={imgs.length > 5? 5: imgs.length } autoplay={true} autoplayInterval={4500} >
       {imgs.map(imgCard =>        
             <div className='slider-card m-2' key={imgCard.id} onClick={(e)=> selectImg(imgCard.id,e)}>
               <Card className='card-size '> 
